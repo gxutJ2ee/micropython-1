@@ -55,3 +55,10 @@ jobs:
 
     - name: Build ci_${{matrix.ci_func }}
       run: source tools/ci.sh && ci_${{ matrix.ci_func }}
+
+    - name: Upload firmware
+      uses: actions/upload-artifact@v3
+      with:
+        name: firmware
+        path: |
+          micropython/ports/esp32/build-ESP32_GENERIC-SPIRAM/firmware.bin
