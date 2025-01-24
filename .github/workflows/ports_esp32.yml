@@ -61,4 +61,4 @@ jobs:
       with:
         name: firmware
         path: |
-          micropython/ports/esp32/build-ESP32_GENERIC-SPIRAM/firmware.bin
+          /home/runner/work/micropython-1/micropython-1/ports/esp32/build-ESP32_GENERIC-SPIRAM/firmware.bin
